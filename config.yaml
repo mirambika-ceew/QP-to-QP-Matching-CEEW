@@ -1,0 +1,27 @@
+
+# config.yaml
+DATA_DIR: "data"
+JOB_DATA_PATH: "data/master_combined_text_overall_skills_summary.json"
+SIMILARITY_DATA_PATH:
+  technical_summary: "data/technical_similarity.csv"
+  behavioural_summary: "data/soft_similarity.csv"
+  overall_summary: "data/combined_similarity.csv"
+LOG_PATH: "logs/app.log"
+CACHE_DIR: "cache"
+SUPPORTED_SECTORS:
+  - "Automotive"
+  - "Food Processing"
+  - "Green Jobs"
+  - "Textile"
+  - "Handicrafts and Carpet"
+  - "Iron and Steel"
+  - "Mining"
+  - "Tourism & Hospitality"
+KEY_NAME:
+  technical_summary: "technical_summary_llama-3.1-8b-instant"
+  behavioural_summary: "behavioural_summary_llama-3.1-8b-instant"
+  overall_summary: "combined_summary_llama-3.1-8b-instant"
+MODEL_CONFIG:
+  embedding_model: "all-MiniLM-L6-v2"
+  batch_size: 32
+  device: "cpu"
